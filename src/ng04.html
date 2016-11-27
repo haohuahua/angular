@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		[ng-cloak] {
+		    display: none;		
+		}
+	</style>
+</head>
+<body >
+ 
+  <form action="" ng-controller="ctr" ng-cloak>
+  		<div>
+  			<label for="">单价</label>
+  			<input type="text" name="price" ng-model="m.price">
+  			
+  		</div>
+  		
+  		<div>
+  			<label for="">数量</label>
+  			<input type="text" name="price" ng-model="m.num">
+  			
+  		</div>
+  		
+  		<div>
+  			<label for="">总收入: <span>{{ calc() }}</span></label>
+  			
+  				
+  		</div>
+  	
+  	
+  	
+  </form>
+  
+  
+  <div class="box">
+  	总收入: <span>{{ calc() }}</span>
+  </div>
+	
+<script src="lib/angular.min.js"></script>
+<script src="js/app.js"></script>	
+</body>
+</html>

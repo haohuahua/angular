@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body >
+ 
+  <form action="" ng-init="m=[{name:'alice',age:20},{name:'monkey',age:21},{name:'heihei',age:22}]">
+  		<div>
+  			<label for="">用户名</label>
+  			<input type="text" name="username" ng-model="m[1].name">
+  			<p>您输入的用户名：<span>姓名：{{ m[1].name }}年龄：{{ m[1].age }}</span></p>
+  		</div>
+  	
+  </form>
+	
+<script src="lib/angular.min.js"></script>	
+</body>
+</html>

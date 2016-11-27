@@ -1,0 +1,82 @@
+
+  AngularJS
+
+ 一、AngularJS:简称：NG,是由google公司创建的基于MVC的前端框架(2009年)
+
+
+    在angular出现之前，backbone,knouckout,ember
+
+   mvc是什么
+
+   M:model,模型，即数据
+   V:view,视图  即用户能看到的界面，在web中，即HTML
+   C:controller,控制器,即业务逻辑
+
+
+ 二、如何使用angularJS
+
+  一)下载angularjs
+
+     npm install angular  版本：1.5.8
+
+   
+     angular最新版本：2.x
+
+
+  二、特点：双向数据绑定，依赖注入(DI)
+
+       
+  input   V->M    ng-model
+    m->V span
+
+ 双向数据绑定实现原理： 脏检查机制
+
+  三、NG常用原生指令 
+  
+    ng-app:相当于js中的作用域，即只有在ng-app作用范围内的anglar指令才能生效
+    ng-model:v->m 通常用于表单元素
+    ng-init:初始化数据  数据格式：string,array,object
+
+    $scope:即m，数据,充当了数据和视图之间联系的桥梁
+
+
+   用户体验  ng-cloak
+
+       <style>
+		[ng-cloak] {
+		    display: none;		
+		}
+	</style>
+
+
+   {{  }}  ：angular表达式，也称插值表达式  或用ng-bind输出数据
+
+
+ angular控制器写法的最佳实践: 
+myApp.controller('ctr',['$scope','$http',function($scope,$http) {
+
+	....
+}]);  
+
+
+  angular作用域:
+
+    $scope（局部变量）：必须在某个控制器内部才能使用的变量
+
+    $rootScope(全局变量)：无论在控制器内外，都可以使用
+
+
+  angular作用域链:与js原生作用域链类似
+
+
+
+
+
+
+
+
+  
+
+
+
+
